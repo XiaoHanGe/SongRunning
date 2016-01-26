@@ -1,0 +1,137 @@
+//
+//  SongRunning.pch
+//  SongRunning
+//
+//  Created by 韩俊强 on 15/12/1.
+//  Copyright (c) 2015年 韩俊强. All rights reserved.
+//
+
+#ifndef SongRunning_SongRunning_pch
+#define SongRunning_SongRunning_pch
+
+// 框架头文件
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <UIKit/UIKit.h>
+// Library
+#import "LibraryViewController.h"
+#define kPageControlTag     101
+#define kScrollViewTag      102
+#define kImageCount     3     //图片个数
+
+// 二维码视图
+#import "MusicViewController.h"
+#import "MineViewController.h"
+#import "JourController.h"
+
+// Vendors
+#import "AppDelegate.h"
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "WgPalyer.h"
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD+MJ.h"
+#import "UIView+TYAlertView.h"
+#import "SDCycleScrollView.h"
+#import "SVProgressHUD.h"
+#import "DXAlertView.h"
+#import "AFHTTPRequestOperationManager.h"
+
+
+// 分享
+#define APPKEY @"5662c855e0f55a8e1700206d"
+#import "UMSocial.h"
+#import "UMSocialSnsService.h"
+#import "UMSocialControllerService.h"
+#import "UMSocialSnsPlatformManager.h"
+#import "UMSocialAccountManager.h"
+
+// AppDelegate
+#import "MainTabbarController.h"
+#import "MusicViewController.h"
+
+
+
+// jour
+#define KSCREEN_HEIGH self.view.frame.size.height
+#define KSCREEN_WIDTH self.view.frame.size.width
+#import "DeatilCell.h"
+#import "JourNotes.h"
+#import "TracelDeatil.h"
+#import "Photo.h"
+#import "JourDetailController.h"
+
+// music
+#import "CategoryCell.h"
+#import "CategoryModel.h"
+#import "MusicPlayViewController.h"
+#import "SounModel.h"
+#import "BlockHelper.h"
+#import "MusicTableViewCell.h"
+#import "CategoryViewController.h"
+#import "MusicModel.h"
+
+// read
+#import "ReadCell.h"
+#import "ReadModel.h"
+#import "ReadDetailModel.h"
+#import "ReadCollectionViewController.h"
+#import "ReadHeaderView.h"
+#import "NetWorkEngineBlock.h"
+#define kReadHeader @"ReadHeader"
+#define kReadCell @"ReadCell"
+#import "PicViewController.h"
+#import "ReadDetailTableViewController.h"
+#import "ReadDetailCell.h"
+#import "MainTabbarController.h"
+#import "MaterialViewController.h"
+
+// Mine
+#import "MineModel.h"
+#import "MineViewController.h"
+#define kMineCell @"cell"
+#import "MineViewCell.h"
+#import "WeatherController.h"
+#import "FreeViewController.h"
+#import "OursViewController.h"
+
+// 数据库
+#import "FMDB.h"
+#import "FMDatabase.h"
+#import <sqlite3.h>
+#import "DataBaseHandle.h"
+#import "ReadTableViewController.h"
+#import "MusicTableViewController.h"
+#import "JourTableViewController.h"
+#import "JourDetailView.h"
+
+
+//设备宽/高/坐标
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define KDeviceHeight [UIScreen mainScreen].bounds.size.height
+#define KDeviceFrame [UIScreen mainScreen].bounds
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kMinePhotoW ([UIScreen mainScreen].bounds.size.width / 10) - 7
+#define kMinePhotoCornerRadius ([UIScreen mainScreen].bounds.size.width / 10 - 7) / 2
+
+//RGB颜色
+#define WEIBOColor(r,g,b)   [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]  // 导航条颜色1
+#define kWEIBOColor2   [UIColor colorWithRed:52/255.0 green:156/255.0 blue:251/255.0 alpha:1];   // 导航条颜色2
+#define kButtonTintColor       [UIColor colorWithRed:255/256.0 green:153/256.0 blue:51/256.0 alpha:1];
+#define MEIJIAbgColor          WEIBOColor(239, 239, 239);
+#define kMineCellColor         [UIColor colorWithRed:251/255.0 green:247/255.0 blue:238/255.0 alpha:1];
+
+
+
+
+// 雪花
+#define SNOW_IMAGENAME         @"snow"
+#define kIMAGE_X    arc4random()%(int)kScreenW
+#define IMAGE_ALPHA          ((float)(arc4random()%10))/10
+#define IMAGE_WIDTH       arc4random()%20 + 10
+#define PLUS_HEIGHT              kScreenH/25
+#define IMAGENAMED(NAME)       [UIImage imageNamed:NAME]
+
+
+#endif

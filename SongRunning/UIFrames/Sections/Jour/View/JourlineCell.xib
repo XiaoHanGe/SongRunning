@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="180" id="9Iy-ff-wLC" customClass="JourlineCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Iy-ff-wLC" id="pdy-yM-Of3">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trarl.png" translatesAutoresizingMaskIntoConstraints="NO" id="UeN-YW-JiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWN-OY-eCr">
+                        <rect key="frame" x="8" y="108" width="249" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="G59-2t-dtL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-wb-HWY">
+                        <rect key="frame" x="0.0" y="137" width="320" height="25"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="uEA-GA-mXi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cmw-0K-tw7">
+                        <rect key="frame" x="265" y="105" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0JQ-Pr-lsg"/>
+                            <constraint firstAttribute="width" constant="50" id="IJJ-GY-Vax"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UeN-YW-JiQ" secondAttribute="trailing" id="2la-3i-8gD"/>
+                    <constraint firstItem="jWN-OY-eCr" firstAttribute="leading" secondItem="pdy-yM-Of3" secondAttribute="leading" constant="8" id="4eC-6E-5Y3"/>
+                    <constraint firstItem="UeN-YW-JiQ" firstAttribute="top" secondItem="pdy-yM-Of3" secondAttribute="top" id="58U-dC-ToI"/>
+                    <constraint firstItem="sKy-wb-HWY" firstAttribute="top" secondItem="jWN-OY-eCr" secondAttribute="bottom" constant="1" id="6rG-5P-GIP"/>
+                    <constraint firstItem="Cmw-0K-tw7" firstAttribute="leading" secondItem="jWN-OY-eCr" secondAttribute="trailing" constant="8" id="ByR-hX-JLp"/>
+                    <constraint firstAttribute="bottom" secondItem="Cmw-0K-tw7" secondAttribute="bottom" constant="8" id="Dd0-Rw-YgK"/>
+                    <constraint firstAttribute="trailing" secondItem="sKy-wb-HWY" secondAttribute="trailing" id="YNe-1L-sSD"/>
+                    <constraint firstItem="UeN-YW-JiQ" firstAttribute="leading" secondItem="pdy-yM-Of3" secondAttribute="leading" id="d9O-2W-hEE"/>
+                    <constraint firstAttribute="bottom" secondItem="UeN-YW-JiQ" secondAttribute="bottom" id="dxw-Us-sDe"/>
+                    <constraint firstAttribute="trailing" secondItem="Cmw-0K-tw7" secondAttribute="trailing" constant="5" id="sK0-oY-KA4"/>
+                    <constraint firstItem="sKy-wb-HWY" firstAttribute="leading" secondItem="pdy-yM-Of3" secondAttribute="leading" id="syM-HO-2ir"/>
+                    <constraint firstAttribute="bottom" secondItem="sKy-wb-HWY" secondAttribute="bottom" constant="1" id="v5d-Ag-l0F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="heheLabel1" destination="jWN-OY-eCr" id="4NL-DL-qIs"/>
+                <outlet property="logo1" destination="Cmw-0K-tw7" id="FXM-37-33H"/>
+                <outlet property="mainImageVie" destination="UeN-YW-JiQ" id="AVI-Q1-rIS"/>
+                <outlet property="messageLabel1" destination="sKy-wb-HWY" id="VJe-TM-a29"/>
+            </connections>
+            <point key="canvasLocation" x="452" y="355"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo.png" width="195" height="195"/>
+        <image name="trarl.png" width="1013" height="624"/>
+    </resources>
+</document>

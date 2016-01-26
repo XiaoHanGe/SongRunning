@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="KGk-i7-Jjw" customClass="CategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kEr-4D-Bdi">
+                        <rect key="frame" x="0.0" y="1" width="140" height="198"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="Ml3-TH-NIa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz7-vW-Lha" userLabel="简介">
+                        <rect key="frame" x="148" y="23" width="167" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="LK9-aZ-DoG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCR-IB-bjR" userLabel="更新时间">
+                        <rect key="frame" x="148" y="93" width="162" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="2cW-hG-yCL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3z-n3-hmn" userLabel="播放量">
+                        <rect key="frame" x="148" y="148" width="130" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="OMh-T3-egr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WCR-IB-bjR" secondAttribute="trailing" constant="10" id="9iB-5l-CQp"/>
+                    <constraint firstItem="g3z-n3-hmn" firstAttribute="leading" secondItem="kEr-4D-Bdi" secondAttribute="trailing" constant="8" id="BgU-O6-UAD"/>
+                    <constraint firstAttribute="trailing" secondItem="g3z-n3-hmn" secondAttribute="trailing" constant="42" id="FyL-4V-wBI"/>
+                    <constraint firstItem="Pz7-vW-Lha" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="Paj-g7-CR8"/>
+                    <constraint firstItem="Pz7-vW-Lha" firstAttribute="leading" secondItem="kEr-4D-Bdi" secondAttribute="trailing" constant="8" id="R00-Zf-0Fr"/>
+                    <constraint firstItem="kEr-4D-Bdi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="emR-vm-S52"/>
+                    <constraint firstItem="WCR-IB-bjR" firstAttribute="leading" secondItem="kEr-4D-Bdi" secondAttribute="trailing" constant="8" id="gt0-mj-PZ2"/>
+                    <constraint firstItem="WCR-IB-bjR" firstAttribute="top" secondItem="Pz7-vW-Lha" secondAttribute="bottom" constant="22" id="kHo-3e-e2a"/>
+                    <constraint firstAttribute="trailing" secondItem="Pz7-vW-Lha" secondAttribute="trailing" constant="5" id="uHR-KI-d9z"/>
+                    <constraint firstAttribute="bottom" secondItem="kEr-4D-Bdi" secondAttribute="bottom" id="veJ-0I-uy6"/>
+                    <constraint firstItem="g3z-n3-hmn" firstAttribute="top" secondItem="WCR-IB-bjR" secondAttribute="bottom" constant="25" id="wuk-Ts-1oB"/>
+                    <constraint firstItem="kEr-4D-Bdi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xP9-NR-7jR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="headerImageView" destination="kEr-4D-Bdi" id="ND7-hH-35Y"/>
+                <outlet property="introduceLabel" destination="Pz7-vW-Lha" id="hFr-fO-Xql"/>
+                <outlet property="playCountLabel" destination="g3z-n3-hmn" id="ALJ-9t-Qs6"/>
+                <outlet property="updataTimeLabel" destination="WCR-IB-bjR" id="8cu-9J-QC5"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="146"/>
+        </tableViewCell>
+    </objects>
+</document>
